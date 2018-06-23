@@ -36,19 +36,19 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKf-Ng-OT6">
-                                        <rect key="frame" x="16" y="52" width="343" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <rect key="frame" x="16" y="52" width="343" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEG-7k-ngD">
-                                        <rect key="frame" x="16" y="79" width="343" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="16" y="77.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVy-xV-4b6">
-                                        <rect key="frame" x="16" y="105.5" width="359" height="20.5"/>
+                                        <rect key="frame" x="16" y="104" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -70,7 +70,7 @@
                                     <constraint firstAttribute="trailing" secondItem="ac7-h7-brg" secondAttribute="trailing" constant="8" id="FVJ-LI-c3F"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CVy-xV-4b6" secondAttribute="bottom" constant="50" id="J15-s6-SPG"/>
                                     <constraint firstItem="CVy-xV-4b6" firstAttribute="leading" secondItem="pEG-7k-ngD" secondAttribute="leading" id="K1N-PA-w51"/>
-                                    <constraint firstAttribute="trailing" secondItem="CVy-xV-4b6" secondAttribute="trailing" id="Nh3-AI-fZz"/>
+                                    <constraint firstAttribute="trailing" secondItem="CVy-xV-4b6" secondAttribute="trailing" constant="16" id="Nh3-AI-fZz"/>
                                     <constraint firstAttribute="bottom" secondItem="1eA-Nl-weo" secondAttribute="bottom" constant="8" id="bxa-mR-3zL"/>
                                     <constraint firstItem="pEG-7k-ngD" firstAttribute="top" secondItem="eKf-Ng-OT6" secondAttribute="bottom" constant="6" id="gkJ-2t-Hyp"/>
                                     <constraint firstItem="CVy-xV-4b6" firstAttribute="top" secondItem="pEG-7k-ngD" secondAttribute="bottom" constant="6" id="oac-1M-t3I"/>

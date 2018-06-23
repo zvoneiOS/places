@@ -109,7 +109,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    
     func getLocatins()  {
         self.activityIndicator.startAnimating()
         ref.child("locations").observe(.value) {[unowned self] (snapshot) in
@@ -135,6 +134,7 @@ class HomeViewController: UIViewController {
             self.scrollViewDidEndDecelerating(self.cardsCollectionView)
         }
     }
+    
     @IBAction func openDirectionsToPlace(_ sender: Any) {
         guard let pplace = self.pickedPlace else{
             return
