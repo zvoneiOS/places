@@ -19,12 +19,12 @@
 		CCD09BD51FC381D7000E4E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD09BD41FC381D7000E4E30 /* Assets.xcassets */; };
 		CCD09BD81FC381D7000E4E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD09BD61FC381D7000E4E30 /* LaunchScreen.storyboard */; };
 		CCD09BEB1FC387FA000E4E30 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD09BEA1FC387FA000E4E30 /* MapKit.framework */; };
-		CCD09BED1FC38BA9000E4E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCD09BEC1FC38BA9000E4E30 /* GoogleService-Info.plist */; };
 		CCD09BF11FC394DC000E4E30 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09BF01FC394DC000E4E30 /* Place.swift */; };
 		CCD09BF41FC39DC4000E4E30 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD09BF31FC39DC4000E4E30 /* PlaceAnnotation.swift */; };
 		CCF089A120DE4C4100F8416B /* ProgressButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF089A020DE4C4100F8416B /* ProgressButton.xib */; };
 		CCF089A320DE4CAA00F8416B /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF089A220DE4CAA00F8416B /* ProgressButton.swift */; };
 		CCF089A520DE6AA100F8416B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF089A420DE6AA100F8416B /* GradientView.swift */; };
+		CCF089A720DE7C7700F8416B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCF089A620DE7C7600F8416B /* GoogleService-Info.plist */; };
 		CCF1FD551FCB0A2E000DF9EA /* ChoosePositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1FD541FCB0A2E000DF9EA /* ChoosePositionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,12 +44,12 @@
 		CCD09BD71FC381D7000E4E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCD09BD91FC381D7000E4E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD09BEA1FC387FA000E4E30 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CCD09BEC1FC38BA9000E4E30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCD09BF01FC394DC000E4E30 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		CCD09BF31FC39DC4000E4E30 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 		CCF089A020DE4C4100F8416B /* ProgressButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressButton.xib; sourceTree = "<group>"; };
 		CCF089A220DE4CAA00F8416B /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		CCF089A420DE6AA100F8416B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CCF089A620DE7C7600F8416B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCF1FD541FCB0A2E000DF9EA /* ChoosePositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePositionViewController.swift; sourceTree = "<group>"; };
 		F6D7DAA6699351AD97FC99C6 /* Pods-places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-places.release.xcconfig"; path = "Pods/Target Support Files/Pods-places/Pods-places.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +119,7 @@
 				CCD09BD61FC381D7000E4E30 /* LaunchScreen.storyboard */,
 				CCD09BCB1FC381D7000E4E30 /* AppDelegate.swift */,
 				CCD09BD91FC381D7000E4E30 /* Info.plist */,
-				CCD09BEC1FC38BA9000E4E30 /* GoogleService-Info.plist */,
+				CCF089A620DE7C7600F8416B /* GoogleService-Info.plist */,
 			);
 			path = places;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 				CC5E83EE1FD48A1500DDFD4C /* Main.storyboard in Resources */,
 				CCD09BD51FC381D7000E4E30 /* Assets.xcassets in Resources */,
 				CC1366641FC4BA0A00DE2A1E /* CardCVC.xib in Resources */,
-				CCD09BED1FC38BA9000E4E30 /* GoogleService-Info.plist in Resources */,
+				CCF089A720DE7C7700F8416B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
