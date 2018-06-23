@@ -53,16 +53,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-Nl-weo">
+                                        <rect key="frame" x="258" y="315" width="109" height="30"/>
+                                        <state key="normal" title="Open directions"/>
+                                        <connections>
+                                            <action selector="openDirectionsToPlace:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ehx-W9-Jcp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pEG-7k-ngD" secondAttribute="trailing" constant="16" id="0DN-pc-eJh"/>
                                     <constraint firstItem="ac7-h7-brg" firstAttribute="top" secondItem="Pdj-3x-iFN" secondAttribute="top" constant="8" id="0uV-TO-OTh"/>
                                     <constraint firstItem="eKf-Ng-OT6" firstAttribute="top" secondItem="Pdj-3x-iFN" secondAttribute="top" constant="52" id="1KI-Gx-mWa"/>
+                                    <constraint firstAttribute="trailing" secondItem="1eA-Nl-weo" secondAttribute="trailing" constant="8" id="7IE-xl-c8j"/>
                                     <constraint firstAttribute="trailing" secondItem="ac7-h7-brg" secondAttribute="trailing" constant="8" id="FVJ-LI-c3F"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CVy-xV-4b6" secondAttribute="bottom" constant="16" id="J15-s6-SPG"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CVy-xV-4b6" secondAttribute="bottom" constant="50" id="J15-s6-SPG"/>
                                     <constraint firstItem="CVy-xV-4b6" firstAttribute="leading" secondItem="pEG-7k-ngD" secondAttribute="leading" id="K1N-PA-w51"/>
                                     <constraint firstAttribute="trailing" secondItem="CVy-xV-4b6" secondAttribute="trailing" id="Nh3-AI-fZz"/>
+                                    <constraint firstAttribute="bottom" secondItem="1eA-Nl-weo" secondAttribute="bottom" constant="8" id="bxa-mR-3zL"/>
                                     <constraint firstItem="pEG-7k-ngD" firstAttribute="top" secondItem="eKf-Ng-OT6" secondAttribute="bottom" constant="6" id="gkJ-2t-Hyp"/>
                                     <constraint firstItem="CVy-xV-4b6" firstAttribute="top" secondItem="pEG-7k-ngD" secondAttribute="bottom" constant="6" id="oac-1M-t3I"/>
                                     <constraint firstAttribute="trailing" secondItem="eKf-Ng-OT6" secondAttribute="trailing" constant="16" id="oub-FI-a0k"/>

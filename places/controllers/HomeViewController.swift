@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
     var ref: DatabaseReference!
     var dataViewSentDown = false
     var list = [Place]()
+    var pickedPlace:Place?
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,7 @@ class HomeViewController: UIViewController {
     }
     
     func setupDetailsWithPlace(place:Place){
+        self.pickedPlace = place
         self.detailNameLabel.text = place.name
         self.detailLocationLabel.text = place.country
         self.detailDescriptionLabel.text = place.description
@@ -133,7 +135,13 @@ class HomeViewController: UIViewController {
             self.scrollViewDidEndDecelerating(self.cardsCollectionView)
         }
     }
-
+    @IBAction func openDirectionsToPlace(_ sender: Any) {
+        guard let pplace = self.pickedPlace else{
+            return
+        }
+        self.openMapForPlace(place: pplace)
+    }
+    
 }
 
 extension HomeViewController: CLLocationManagerDelegate, MKMapViewDelegate {
@@ -171,6 +179,19 @@ extension HomeViewController: CLLocationManagerDelegate, MKMapViewDelegate {
         
     }
     
+    func openMapForPlace(place:Place) {
+        let regionDistance:CLLocationDistance = 10000
+        let coordinates = CLLocationCoordinate2DMake(place.latitude, place.longitude)
+        let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = place.name
+        mapItem.openInMaps(launchOptions: options)
+    }
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
